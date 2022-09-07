@@ -12,6 +12,8 @@ export const getUsers = async (req, res) => {
           name: {
             [Op.like]: "%" + search + "%",
           },
+        },
+        {
           email: {
             [Op.like]: "%" + search + "%",
           },
@@ -27,6 +29,8 @@ export const getUsers = async (req, res) => {
           name: {
             [Op.like]: "%" + search + "%",
           },
+        },
+        {
           email: {
             [Op.like]: "%" + search + "%",
           },
